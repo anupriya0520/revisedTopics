@@ -1,0 +1,16 @@
+import java.util.Arrays;
+class Main {
+    public static void main(String[] args) {
+        String s="listen";
+        String str="silent";
+        char chars1[]=s.toCharArray();
+        char chars2[]=str.toCharArray();
+        Arrays.sort(chars1);
+        Arrays.sort(chars2);
+        if(Arrays.equals(chars1,chars2)){
+            System.out.println("anagram");
+        }else{
+            System.out.println("not an anagram");
+        }
+    }
+}
